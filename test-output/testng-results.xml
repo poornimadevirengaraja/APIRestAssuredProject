@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-16T07:28:45 AST" name="Default suite" finished-at="2024-09-16T07:28:48 AST" duration-ms="2718">
+    <groups>
+    </groups>
+    <test started-at="2024-09-16T07:28:45 AST" name="Default test" finished-at="2024-09-16T07:28:48 AST" duration-ms="2718">
+      <class name="package1.jsonlibrary">
+        <test-method signature="method1()[pri:0, instance:package1.jsonlibrary@222545dc]" started-at="2024-09-16T07:28:45 AST" name="method1" finished-at="2024-09-16T07:28:48 AST" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+      </class> <!-- package1.jsonlibrary -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
