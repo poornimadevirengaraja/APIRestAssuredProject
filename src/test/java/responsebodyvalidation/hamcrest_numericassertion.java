@@ -4,39 +4,38 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class hamcrest_numbericassertion {
-	// Numeric Assertions - Response Body validations using hamcrest.matchers
+public class hamcrest_numericassertion {
 	@Test
 	public void method1() {
 		baseURI="https://reqres.in/";
 		given().
 			get("api/users?page=2").
 		then().
-			body("data.id",hasItem(10)).
+			body("data.id[0]",equalTo(7)).
 			statusCode(200).
-			log().all();		
+			log().all();	
 	}
-
+	
 	@Test
 	public void method2() {
 		baseURI="https://reqres.in/";
 		given().
 			get("api/users?page=2").
 		then().
-			body("data.id",hasItems(9,10,12)).
+			body("data.id[1]",lessThan(9)).
 			statusCode(200).
-			log().all();		
+			log().all();	
 	}
-
+	
 	@Test
 	public void method3() {
 		baseURI="https://reqres.in/";
 		given().
 			get("api/users?page=2").
 		then().
-			body("data[0]",hasKey("email")).
+			body("data.id[2]",greaterThan(7)).
 			statusCode(200).
-			log().all();		
+			log().all();	
 	}
 	
 	@Test
@@ -45,18 +44,8 @@ public class hamcrest_numbericassertion {
 		given().
 			get("api/users?page=2").
 		then().
-			body("data[1]",hasValue("Lindsay")).
+			body("data.id[3]",greaterThanOrEqualTo(10)).
 			statusCode(200).
-			log().all();		
-	}
-	@Test
-	public void method5() {
-		baseURI="https://reqres.in/";
-		given().
-			get("api/users?page=2").
-		then().
-			body("data[2]",hasEntry("email","tobias.funke@reqres.in")).
-			statusCode(200).
-			log().all();		
+			log().all();	
 	}
 }

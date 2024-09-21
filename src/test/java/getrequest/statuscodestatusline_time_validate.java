@@ -4,14 +4,17 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class getrequest {
+public class statuscodestatusline_time_validate {
 	@Test
 	public void method1() {
 		baseURI="https://reqres.in/";
 		given().
 			get("api/users/2").
-		then().			
-			statusCode(200).
+		then().	
+			// get statuscode , time and status line validation
+			statusCode(200).  
+			statusLine("HTTP/1.1 200 OK").
+			time(lessThan(1000L)).
 			log().all();
 		
 		

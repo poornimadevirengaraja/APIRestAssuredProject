@@ -7,16 +7,15 @@ import org.testng.annotations.Test;
 
 public class hamcrest_responseheadervalidate {
 	@Test
-	public void method3() {
+	public void method1() {
 		baseURI="https://reqres.in/";
 		given().
 			get("api/users/2").
 		then().
+		// To validate Header name and its value
 			header("Content-Type","application/json; charset=utf-8").
 			header("Server",containsString("cloudflare")).
-			statusCode(200).
-			statusLine("HTTP/1.1 200 OK")
-			.time(lessThan(1000L)).
+			header("Content-Type",equalTo("application/json; charset=utf-8")).
 			log().all();
 			
 		

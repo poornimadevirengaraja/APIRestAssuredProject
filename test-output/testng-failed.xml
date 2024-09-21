@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cookiesextraction.getdetailedcookiemethod">
+      <class name="responsebodyvalidation.parsing_resbody_hamcrest">
         <methods>
           <include name="method1"/>
         </methods>
-      </class> <!-- cookiesextraction.getdetailedcookiemethod -->
+      </class> <!-- responsebodyvalidation.parsing_resbody_hamcrest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

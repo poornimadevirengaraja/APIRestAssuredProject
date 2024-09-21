@@ -5,82 +5,58 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class hamcrest_collectionassertion {
-	// string Assertions - Response Body validations using hamcrest.matchers
+	// Numeric Assertions - Response Body validations using hamcrest.matchers
+	@Test
+	public void method1() {
+		baseURI="https://reqres.in/";
+		given().
+			get("api/users?page=2").
+		then().
+			body("data.id",hasItem(10)).
+			statusCode(200).
+			log().all();		
+	}
+
 	@Test
 	public void method2() {
 		baseURI="https://reqres.in/";
 		given().
-			get("api/users/2").
+			get("api/users?page=2").
 		then().
-			body("data.first_name",equalTo("Janet")).
+			body("data.id",hasItems(9,10,12)).
 			statusCode(200).
-			//log().all().
-			//log().body().
-			log().headers();
-		
+			log().all();		
 	}
 
-	
 	@Test
 	public void method3() {
 		baseURI="https://reqres.in/";
 		given().
-			get("api/users/2").
+			get("api/users?page=2").
 		then().
-			body("data.first_name",equalTo("Janete")).
+			body("data[0]",hasKey("email")).
 			statusCode(200).
-			//log().all().
-			//log().body().
-			log().headers();
-		
+			log().all();		
 	}
 	
 	@Test
 	public void method4() {
 		baseURI="https://reqres.in/";
 		given().
-			get("api/users/2").
+			get("api/users?page=2").
 		then().
-			body("data.first_name",startsWith("J")).
+			body("data[1]",hasValue("Lindsay")).
 			statusCode(200).
-			log().all();
-		
+			log().all();		
 	}
-	
 	@Test
 	public void method5() {
 		baseURI="https://reqres.in/";
 		given().
-			get("api/users/2").
+			get("api/users?page=2").
 		then().
-			body("data.first_name",endsWith("J")).
+			body("data[2]",hasEntry("email","tobias.funke@reqres.in")).
 			statusCode(200).
-			log().all();
-		
+			log().all();		
 	}
-	
-	@Test
-	public void method6() {
-		baseURI="https://reqres.in/";
-		given().
-			get("api/users/2").
-		then().
-			body("data.last_name",containsString("aver")).
-			statusCode(200).
-			log().all();
-		
-	}
-	
-	@Test
-	public void method7() {
-		baseURI="https://reqres.in/";
-		given().
-			get("api/users/2").
-		then().
-			body("data.last_name",equalToIgnoringCase("Weaver")).
-			statusCode(200).
-			log().all();
-		
-	}
-	
 }

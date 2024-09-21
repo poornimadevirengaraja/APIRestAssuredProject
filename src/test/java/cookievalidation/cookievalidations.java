@@ -46,8 +46,11 @@ public class cookievalidations {
 }
 
 /*
- * here AEC is cookie name and this is cookie value
- * =AVYB7cpYBLs_72bPgCqA5jrVb1ZoXHn4agl32gPvnMNmNWzzHSAtNTiI5Q cookie attributes
+ *cookie name :
+ *AEC
+ * cookie value :
+ * =AVYB7cpYBLs_72bPgCqA5jrVb1ZoXHn4agl32gPvnMNmNWzzHSAtNTiI5Q 
+ * cookie attributes :
  * = Path=/; Domain=google.com; Secure; HttpOnly; Expires=Wed, 19 Mar 2025
  * 04:13:42 GMT;
  */
