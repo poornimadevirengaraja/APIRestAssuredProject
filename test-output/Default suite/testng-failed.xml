@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="schemavalidation.jsonschemavalidation">
+      <class name="cookiesextraction.getdetailedcookiemethod">
         <methods>
-          <include name="Method1"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- schemavalidation.jsonschemavalidation -->
+      </class> <!-- cookiesextraction.getdetailedcookiemethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
