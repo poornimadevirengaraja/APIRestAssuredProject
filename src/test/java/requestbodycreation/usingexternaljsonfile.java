@@ -15,11 +15,11 @@ public class usingexternaljsonfile {
 	public void method1() throws FileNotFoundException {
 		File f=new File(".\\createuserreqbody.json");
 		FileReader fr=new FileReader(f);
-		JSONTokener jt=new JSONTokener(fr);
-		JSONObject rb=new JSONObject(jt);
+		JSONTokener jt=new JSONTokener(fr); //Parsing the Json Objects
+		JSONObject rb=new JSONObject(jt); // response body Object got here
 		baseURI="https://reqres.in";
 		given().
-			body(rb.toString()).
+			body(rb.toString()).// .tostring is very important for jsonobjects
 			log().body().
 		when().
 			post("/api/users?page=2").			

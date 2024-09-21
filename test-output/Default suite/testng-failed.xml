@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="responsebodyvalidation.hamcrest_collectionassertion">
+      <class name="schemavalidation.jsonschemavalidation">
         <methods>
-          <include name="method5"/>
-          <include name="method3"/>
+          <include name="Method1"/>
         </methods>
-      </class> <!-- responsebodyvalidation.hamcrest_collectionassertion -->
+      </class> <!-- schemavalidation.jsonschemavalidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
