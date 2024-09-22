@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 2) import json object and org.json dependency in pom.xml
 3) get response
 4) create jsonobject and to string
-5) getjsonarray and loop for each items in the array in response
+5) getjsonobject and getjsonarray and loop for each items in the array in response
 */
 
 

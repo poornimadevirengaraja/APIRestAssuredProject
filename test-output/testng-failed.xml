@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="responsebodyvalidation.parsing_resbody_hamcrest">
+      <class name="excelpoi_package.excelpoi_createuer">
         <methods>
-          <include name="method1"/>
+          <include name="userdata"/>
         </methods>
-      </class> <!-- responsebodyvalidation.parsing_resbody_hamcrest -->
+      </class> <!-- excelpoi_package.excelpoi_createuer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
