@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="responsebodyvalidation.parsing_usingjsonpath_assertequals">
+      <class name="pojo_forresponsebodycreation.createuser">
         <methods>
-          <include name="method1"/>
+          <include name="dataprovider_method"/>
+          <include name="createuser_method"/>
         </methods>
-      </class> <!-- responsebodyvalidation.parsing_usingjsonpath_assertequals -->
+      </class> <!-- pojo_forresponsebodycreation.createuser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
