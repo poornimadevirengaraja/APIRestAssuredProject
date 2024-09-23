@@ -1,6 +1,5 @@
 package requestbodycreation;
 import static io.restassured.RestAssured.*;
-
 import java.util.HashMap;
 import java.util.Map;
 

@@ -20,3 +20,7 @@ public void oauth() {
 
 }
 }
+
+/*oauth2
+ * 
+ * given().auth().oauth2("Access token").get("your end point URL")*/

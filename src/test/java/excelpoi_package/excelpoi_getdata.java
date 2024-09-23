@@ -24,9 +24,6 @@ public class excelpoi_getdata {
 		String value= sheet.getRow(0).getCell(1).getStringCellValue();
 		System.out.println(value);
 		ref2.close();
-		ref1.close();
-		
-		
-			
+		ref1.close();			
 	}
 }

@@ -6,6 +6,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
+// getting all the headers 
 public class getheaders_method {
 	@Test
 	public void method1() {

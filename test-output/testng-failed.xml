@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excelpoi_package.excelpoi_createuer">
+      <class name="responsebodyvalidation.parsing_usingjsonpath_assertequals">
         <methods>
-          <include name="userdata"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- excelpoi_package.excelpoi_createuer -->
+      </class> <!-- responsebodyvalidation.parsing_usingjsonpath_assertequals -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

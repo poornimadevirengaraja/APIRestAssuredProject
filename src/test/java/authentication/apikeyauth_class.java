@@ -13,7 +13,7 @@ public class apikeyauth_class {
 	public void apikeyauth() {
 		
 		Response res=given().
-		header("X-API-KEY","abcdef12345").
+				header("X-API-KEY","abcdef12345").
 		when().
 			get("https://www.postman.com/collections/").
 		then().

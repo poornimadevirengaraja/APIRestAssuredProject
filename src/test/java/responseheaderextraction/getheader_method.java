@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.equalTo;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
-
+//getting a single header
 public class getheader_method {
 	@Test
 	public void method1() {

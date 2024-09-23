@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 
+// Parsing response body and Assertion using Hamcrest matchers
 public class parsing_resbody_hamcrest {
 
 	@Test

@@ -12,7 +12,8 @@ public class getcookies_method {
 	public void method1() {		
 		baseURI = "https://www.google.com/";
 		//Response class is used to store Responses
-		Response res=given().pathParam("folder", "search"). 
+		Response res=given().
+				pathParam("folder", "search"). 
 				queryParam("q", "tiger").
 				queryParam("tbm", "isch").
 				log().all().

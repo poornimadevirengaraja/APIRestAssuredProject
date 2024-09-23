@@ -2,6 +2,7 @@ package responsebodyvalidation;
 
 import static io.restassured.RestAssured.given;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
 
@@ -15,11 +16,15 @@ import io.restassured.response.Response;
 */
 
 
+//dynamically changing objects inside the array in response body 
+//using jsonObject
+
 public class parsing_dynamicaljsonobject_getjsonarray {
 	@Test
 	public void method1() {
 		Response res = given().get("https://reqres.in/api/users?page=2");
 		JSONObject rb = new JSONObject(res.asString());
+		
 		// To get no of Objects inside data array in response body
 		int numofobjs = rb.getJSONArray("data").length();
 		for (int i = 0; i < numofobjs; i++) {
@@ -31,5 +36,25 @@ public class parsing_dynamicaljsonobject_getjsonarray {
 				break;				
 			}
 		}
+	}
+	
+
+	// Using jsonObject parsing and validating response Objects
+	@Test
+	public void method2() {
+	
+		Response res=given().get("https://reqres.in/api/users/1");
+		JSONObject rb = new JSONObject(res.asString());
+		Assert.assertEquals(rb.getJSONObject("data").get("email"),"george.bluth@reqres.in");
+		
+	}
+	// Using jsonObject parsing and validating response Array and its corresponding Objects
+	@Test
+	public void method3() {
+	
+		Response res = given().get("https://reqres.in/api/users?page=2");
+		JSONObject rb = new JSONObject(res.asString());
+		Assert.assertEquals(rb.getJSONArray("data").getJSONObject(3).get("email"),"byron.fields@reqres.in");
+		
 	}
 }

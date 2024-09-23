@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T00:11:58 GST" name="Default suite" finished-at="2024-09-23T00:11:59 GST" duration-ms="638">
+  <suite started-at="2024-09-23T12:30:55 GST" name="Default suite" finished-at="2024-09-23T12:30:57 GST" duration-ms="2051">
     <groups>
     </groups>
-    <test started-at="2024-09-23T00:11:58 GST" name="Default test" finished-at="2024-09-23T00:11:59 GST" duration-ms="638">
-      <class name="excelpoi_package.excelpoi_createuer">
-        <test-method signature="userdata()[pri:0, instance:excelpoi_package.excelpoi_createuer@436813f3]" started-at="2024-09-23T00:11:58 GST" name="userdata" finished-at="2024-09-23T00:11:59 GST" duration-ms="592" status="PASS">
+    <test started-at="2024-09-23T12:30:55 GST" name="Default test" finished-at="2024-09-23T12:30:57 GST" duration-ms="2051">
+      <class name="cookiesextraction.getcookies_method">
+        <test-method signature="method1()[pri:0, instance:cookiesextraction.getcookies_method@8f4ea7c]" started-at="2024-09-23T12:30:55 GST" name="method1" finished-at="2024-09-23T12:30:57 GST" duration-ms="2013" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userdata -->
-      </class> <!-- excelpoi_package.excelpoi_createuer -->
+        </test-method> <!-- method1 -->
+      </class> <!-- cookiesextraction.getcookies_method -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

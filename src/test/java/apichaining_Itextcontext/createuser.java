@@ -17,7 +17,7 @@ public class createuser {
 	@Test
 	public void creatusermethod(ITestContext context) {
 		
-		String f_name=  (String) context.getAttribute("fn");
+		String f_name=  (String) context.getAttribute("fn"); // casting to string after getting attribute
 		
 		JSONObject rb=new JSONObject();
 		rb.put("name", f_name);
